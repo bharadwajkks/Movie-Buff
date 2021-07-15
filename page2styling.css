@@ -1,0 +1,292 @@
+
+       ul{
+    list-style-type:none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: 0px;
+    position: static;
+    
+    position: fixed;
+}li{
+float: left;    
+}
+li a {
+float: left;
+display:block;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 20px;
+font-weight: 100px;
+padding: 15px;
+text-align: center;
+text-decoration: none;
+color: azure;
+}
+li a:hover{
+    background-color: rgb(238, 130, 162);
+    color:aliceblue;
+}
+.toppage{
+    background-image: url('bg4.jpg');
+    height: 1600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+	overflow-y: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--bg: #e3e4e8;
+	--fg: #17181c;
+	--transDur: 0.1s;
+	font-size: calc(20px + (40 - 20)*(100vw - 320px)/(2560 - 320));
+}
+
+ input {
+	color: var(--fg);
+	font: 1em/1.5 Helvetica, sans-serif;
+}
+form{
+    display: flex;
+    
+}
+form, label {
+	width: 100%;
+}
+form {
+	margin: auto;
+	max-width: 24em;
+	padding: 0 1.5em;
+}
+label {
+	display: block;
+	text-align: center;
+	-webkit-tap-highlight-color: transparent;
+}
+label:first-child input {
+	border-radius: 0.5em 0 0 0.5em;
+	box-shadow:
+		0.1em 0 0 #2726267f inset,
+		-0.1em 0 0 #27262600 inset,
+		0 0.1em 0 #afa490 inset,
+		0 -0.1em 0 #ffffff3f,
+		0 0.2em 0.5em #0000007f,
+		0 -0.1em 0 #926086 inset,
+		-0.1em -0.2em 0 #ffffff7f inset,
+		0.2em 0 0 #ffffff7f inset;
+}
+label:last-child input {
+	border-radius: 0 0.5em 0.5em 0;
+	box-shadow:
+		0 -0.1em 0 #926086 inset,
+		0.1em 0 0 #2726267f inset,
+		-0.1em 0 0 #2726267f inset,
+		0 0.1em 0 #afa490 inset,
+		-0.1em 0 0 #afa490 inset,
+		0 -0.1em 0 #ffffff3f,
+		0 0.2em 0.5em #0000007f,
+		-0.1em -0.1em 0 0.1em #ffffff7f inset;
+}
+label:first-child input:checked {
+	box-shadow:
+		0.1em 0 0 #272626af inset,
+		-0.1em 0 0 #272626 inset,
+		0 0.1em 0 #847a62 inset,
+		0 -0.1em 0 #ffffff3f,
+		0 0.1em 0 #ffffff7f,
+		0 -0.1em 0 #722257 inset,
+		-0.1em -0.2em 0 #ffffff7f inset,
+		0.2em 0 0 #ffffff7f inset;
+}
+label:last-child input:checked {
+	box-shadow:
+		0.1em 0 0 #272626af inset,
+		-0.1em 0 0 #272626 inset,
+		0 -0.1em 0 #722257 inset,
+		0 0.1em 0 #847a62 inset,
+		-0.1em 0 0 #847a62 inset,
+		0 -0.1em 0 #ffffff3f,
+		0 0.1em 0 #ffffff7f,
+		-0.1em -0.1em 0 0.1em #ffffff7f inset;
+}
+input {
+	background-image: linear-gradient(#ffffff 33%,#414751 58%,#837b52,#c5baa1,#c3adaa);
+	border-radius: 0;
+	box-shadow:
+		0.1em 0 0 #2726267f inset,
+		-0.1em 0 0 #27262600 inset,
+		0 0.1em 0 #afa490 inset,
+		0 -0.1em 0 #ffffff3f,
+		0 0.2em 0.5em #0000007f,
+		0 -0.1em 0 #926086 inset,
+		-0.1em -0.2em 0 #ffffff7f inset;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 0.5em;
+	width: 100%;
+	height: 1em;
+	transition: box-shadow var(--transDur) ease-in-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+input:checked {
+	background-image: linear-gradient(#ffffff 33%,#414751 58%,#827a7b,#c0b6ac,#c3adaa);
+	box-shadow:
+		0.1em 0 0 #272626af inset,
+		-0.1em 0 0 #272626 inset,
+		0 0.1em 0 #847a62 inset,
+		0 -0.1em 0 #ffffff3f,
+		0 0.1em 0 #ffffff7f,
+		0 -0.1em 0 #722257 inset,
+		-0.1em -0.2em 0 #ffffff7f inset;
+}
+input:checked + span {
+	opacity: 1;
+}
+input:focus {
+	outline: transparent;
+}
+input + span {
+	opacity: 0.65;
+	transition: opacity var(--transDur) ease-in-out;
+}
+#bn{
+    border: 2px solid grey, 5px solid black;
+    color: white;
+    box-shadow: 4px 4px #9260869c, -4px -4px #9260869c;
+    border-radius:0px;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #926086;
+    width: 160px;
+    margin-left: 268px;
+	border: 2px solid pink;  
+	opacity: 0.65;
+	transition: width 500ms;
+	padding: 3px;
+}
+#bn:hover{
+	opacity: 1;
+	width: 240px;
+}
+#leftpos{
+	width:300px;
+	height: 400px;
+	padding: 10px;
+	margin-left: 80px;
+	box-shadow: -8px 0px rgba(0, 0, 0, 0.795);
+	border: 2px solid rgb(20, 19, 19);
+	transform: rotate(-2deg);
+}
+#rightpos{
+	width:300px;
+	height: 400px;
+	padding: 10px;
+	margin-left: 65px;
+	box-shadow: 8px 0px rgba(0, 0, 0, 0.795);
+	border: 2px solid rgb(0, 0, 0);
+	border-style: ridge;
+	transform: rotate(2deg);
+}
+#resu{
+	background-color: rgba(19, 11, 11, 0.616); 
+	padding: 15px; 
+	font-family: monospace;
+	text-shadow: 1px 4px rgba(223, 112, 186, 0.863), -1px -2px red;
+	text-overflow: scroll;
+	font-size: 50px;
+}
+
+#detailspage{
+	background-image: url('dome.jpg');
+	height: 1000px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow-x: hidden;
+	visibility: hidden;
+}
+#dls1{
+	color: rgb(10, 17, 110);
+	text-align: center;
+	padding: 40px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-shadow: 1px 3px rgb(213, 159, 235) ;
+}
+#dls2{
+	color: rgb(7, 13, 97);
+	text-align: center;
+	padding: 40px;
+	padding-left: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	
+	
+	text-shadow: 1px 3px rgb(231, 172, 255) ;
+}
+#tlt1, #tlt2{
+	font-style: oblique;
+    color: rgb(54 42 53);
+    text-shadow: 0px 4px rgb(134 147 191);
+    text-align: center;
+    padding-top: 30px;
+}
+#bnqwe{
+	margin-left: 115px;
+	display: block;
+	padding: 10px;
+	text-align: center;
+	background-color: #c93999;
+	text-decoration: none;
+	width: 200px;
+	font-size: 22px;
+	color: white;
+	box-shadow: 0px 12px 5px rgb(173, 118, 166);
+	opacity: 0.5;
+	transition: opacity 600ms;
+}
+#bnqwe:hover{
+	opacity: 1;
+}
+#listpage{
+	visibility: hidden;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 3px rgb(229, 188, 248); 
+	border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+	background: rgba(138, 20, 167, 0.808); 
+	border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+	background: #ce40f1; 
+  }
+
+#ms1, #ms2{
+	padding-bottom: 20px;
+	display: block;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 150px;
+	padding-right: 150px;
+	font-family: monospace;
+	font-size: 28px;
+	color: rgb(7, 13, 97);
+	border:61px black;
+}

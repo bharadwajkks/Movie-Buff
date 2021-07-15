@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="page2styling.css">
+ <link rel='stylesheet' href="bootstrap.css">
+ <link rel="shortcut icon" type="image/jpg" href="fvi.jpg"/>
+ <script src="page2scr.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieBuff</title>
+    <nav>
+        <ul class="navi">
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='#'>Shorts</a></li>
+            <li><a href='#'>Favorite Filmmakers</a></li>
+            <li><a href='#'>Suggestions</a></li> 
+        </ul>
+    </nav>
+</head>
+<body>
+    <div class="toppage" >
+        <div class="row" style="height: 100px;"></div>
+        <div class="row">
+            <div class='col-3' style=" padding:50px;  padding-top: 70px;">
+                <h1 style="font-size: 38px;
+                padding: 60px;
+                text-align: center;
+                color:rgb(244 103 103);
+                text-shadow: -3px 0px #bb2f2f, -4px 0px #2521f3f5;
+                font-family: inherit;
+                font-style: oblique;
+                letter-spacing: 4px;">Let us find movies that suits your current mood</h1>
+                <br>
+               </div> 
+                <div class="col-6" style="height: 600px; overflow-y: auto; box-shadow: 0 0 30px rgba(216, 132, 146, 0.692);"> 
+                    <br>
+                    <h2 style="text-align: center;
+                    color: #f0f8ff00;
+                    font-size: 43px;
+                    letter-spacing: 2px;
+                    text-shadow: 1px 0px #ffd800, -2px 0px #f0f0fa7a, 0px 0px 4px #ff6000; line-height: 8px;" >How you are feeling right now?</h2><br>
+                <form>
+                    
+                    <label><input type="radio" id='mood1' name="mood" value="0" checked><span>Cool</span></label>
+                    <label><input type="radio" id='mood2' name="mood" value="1"><span>Bored</span></label>
+                    <label><input type="radio" id='mood3' name="mood" value="2"><span>Deep</span></label>
+                    <label><input type="radio" id='mood4' name="mood" value="3"><span>Pleasant</span></label>
+                    
+                </form><br><br>
+                <h2 style="text-align: center;
+                    color: #f0f8ff00;
+                    font-size: 43px;
+                    letter-spacing: 2px;
+                    text-shadow: 1px 0px #ffd800, -2px 0px #f0f0fa7a, 0px 0px 4px #ff6000; line-height: 8px;" >What is your Favorite Genre?</h2><br>
+                 <form>
+                    
+                    <label><input type="radio" id='mood1' name="favgen" value="0" checked><span>Action</span></label>
+                    <label><input type="radio" id='mood2' name="favgen" value="1"><span>Thriller</span></label>
+                    <label><input type="radio" id='mood3' name="favgen" value="2"><span>Drama</span></label>
+                    <label><input type="radio" id='mood4' name="favgen" value="3"><span>Comedy</span></label>
+                    
+                </form><br><br>
+                <h2 style="text-align: center;
+                    color: #f0f8ff00;
+                    font-size: 43px;
+                    letter-spacing: 2px;
+                    text-shadow: 1px 0px #ffd800, -2px 0px #f0f0fa7a, 0px 0px 4px #ff6000; line-height: 8px;" >What is your Favorite Color?</h2><br>
+                 <form>
+                    
+                    <label><input type="radio" id='mood1' name="favcol" value="0" checked><span>Black</span></label>
+                    <label><input type="radio" id='mood2' name="favcol" value="1"><span>Red</span></label>
+                    <label><input type="radio" id='mood3' name="favcol" value="2"><span>Blue</span></label>
+                    <label><input type="radio" id='mood4' name="favcol" value="3"><span>White</span></label>
+                    
+                </form><br><br>
+                <h2 style="text-align: center;
+                    color: #f0f8ff00;
+                    font-size: 43px;
+                    letter-spacing: 2px;
+                    text-shadow: 1px 0px #ffd800, -2px 0px #f0f0fa7a, 0px 0px 4px #ff6000; line-height: 8px;" >To which age group you belong?</h2><br>
+                 <form>
+                    
+                    <label><input type="radio" id='mood1' name="favcol" value="0" checked><span>8 - 17</span></label>
+                    <label><input type="radio" id='mood2' name="favcol" value="1"><span>18 - 26</span></label>
+                    <label><input type="radio" id='mood4' name="favcol" value="3"><span>26 - 48</span></label>
+                    
+                </form>
+               <br> <button id='bn' type="Submit" onclick="sugg()">submit</button><br><br>
+                </div>
+        </div>
+        <div class="row" style="height: 250px;"></div>
+        <div class="row" id="listpage">
+            <div class="col-4">
+                <img id='leftpos'src='https://s3.amazonaws.com/criterion-production/films/0f80977b82c0b68bfa43193be7cfc46c/aFQlK4PF7AXR5EdtpHGD2KmjEBoWjV_large.jpg'>
+            </div>
+            <div class="col-4" style="text-align: center;  padding: 50px; color: aliceblue; ">
+                <h4 id='resu'></h4>
+                <a id='bnqwe' href="#detailspage">Show details</a>
+            </div>
+            <div class="col-4" style="width: fit-content;">
+                <img id='rightpos' title="" class="tool" src='https://s3.amazonaws.com/criterion-production/films/0f80977b82c0b68bfa43193be7cfc46c/aFQlK4PF7AXR5EdtpHGD2KmjEBoWjV_large.jpg'>
+            </div>
+        </div>
+       
+        
+    </div> 
+    <div id="detailspage">
+        <div class="row" style="height:150px"></div>
+        <div class="row">
+            <div class="col-1"></div>
+        <div class="col-5" style="background-color: rgba(213, 159, 235, 0.63); padding-left: 40px;">
+            <h3 id="tlt1"></h3>
+            <h6 id="dls1">
+                
+            </h6>
+            <div id="ms1">
+                <img style="width: 30px; height: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Metacritic.svg/1200px-Metacritic.svg.png"><span id="metascore1"><strong>auvs</strong></span><span style="visibility: hidden;"> fue </span><img style="width: 30px; height: 30px;" src="https://ia.media-imdb.com/images/M/MV5BODc4MTA3NjkzNl5BMl5BcG5nXkFtZTgwMDg0MzQ2OTE@._V1_.png"><span id="iscore1"></span>
+
+            </div>
+        </div>
+        <div class="col-5" style="background-color: rgba(202, 129, 231, 0.63); padding-right: 40px;">
+            <h3 id="tlt2"></h3>
+            <h6 id="dls2">
+                
+            </h6>
+            <div id="ms2">
+                <img style="width: 30px; height: 30px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Metacritic.svg/1200px-Metacritic.svg.png"><span id="metascore2"><strong>auvs</strong></span><span style="visibility: hidden;"> sfe </span><img style="width: 30px; height: 30px;" src="https://ia.media-imdb.com/images/M/MV5BODc4MTA3NjkzNl5BMl5BcG5nXkFtZTgwMDg0MzQ2OTE@._V1_.png"><span id="iscore2"></span>
+
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+    </div>
+</body>
+</html>
+
+   
+ 
+    
+
+
